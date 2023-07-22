@@ -5,12 +5,37 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   </head>
-
   <body>
+    <!-- Header -->
+    <header id="header">
+      <h1>Big Picture</h1>
+      <nav>
+        <ul>
+          <li><a href="#intro">Intro</a></li>
+          <li><a href="#one">What I Do</a></li>
+          <li><a href="#two">Who I Am</a></li>
+          <li><a href="#work">My Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <%= yield %>
+
+    <!--Dependencias de Javascript -->
+    <%= javascript_include_tag "application"%>
+    <%= javascript_include_tag "jquery.min"%>
+    <%= javascript_include_tag "jquery.poptrox.min"%>
+    <%= javascript_include_tag "jquery.scrolly.min"%>
+    <%= javascript_include_tag "jquery.scrollex.min"%>
+    <%= javascript_include_tag "browser.min"%>
+    <%= javascript_include_tag "breakpoints.min"%>
+    <%= javascript_include_tag "util"%>
+    <%= javascript_include_tag "main"%>
   </body>
 </html>

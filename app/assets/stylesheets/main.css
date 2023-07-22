@@ -686,7 +686,7 @@ input, select, textarea {
 			height: 5em;
 			line-height: 4.5em;
 			padding: 0;
-			background-image: url("images/dark-arrow.svg");
+			background-image: url("../images/dark-arrow.svg");
 			background-position: center center;
 			background-repeat: no-repeat;
 			text-indent: -10em;
@@ -2244,7 +2244,8 @@ input, select, textarea {
 /* Intro */
 
 	#intro {
-		background: url("images/overlay.png"), url("../../images/intro.jpg");
+		/* background: url(), url("https://picsum.photos/id/156/1920/1080"); */
+		background: url(<%= asset_url('overlay.png') %>), url("https://picsum.photos/id/156/1920/1080");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
@@ -2252,9 +2253,9 @@ input, select, textarea {
 	}
 
 /* One */
-
+	
 	#one {
-		background: url("images/overlay.png"), url("../../images/one.jpg");
+		background: url("images/overlay.png"), url("https://picsum.photos/id/192/1920/1080");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -2263,7 +2264,7 @@ input, select, textarea {
 /* Two */
 
 	#two {
-		background: url("images/overlay.png"), url("../../images/two.jpg");
+		background: url("images/overlay.png"), url("https://picsum.photos/id/201/1920/1080");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
